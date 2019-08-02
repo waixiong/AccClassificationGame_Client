@@ -216,7 +216,8 @@ var Game = new Phaser.Class({
             data.result = 'correct';
             this.sound.play('correct');
             t = this.add.image(432 + 48, this.rolls[data.answer].receiver.y - 35, 'true');
-            this.score += 1000 * (MAXTIME-data.delta_time)/MAXTIME;
+            var s = 1000 * (MAXTIME-data.delta_time)/MAXTIME;
+            this.score += s>0? s : 0;
         }else{
             data.result = 'wrong';
             this.sound.play('wrong');

@@ -89,7 +89,7 @@
             "Cash advances": "Credit",
             "Finance costs": "Debit",
             "Iredeemable convertible unsecured loan stock\n(ICULS)": "Credit",
-            "Land helf for property developement": "Debit",
+            "Land held for property developement": "Debit",
             "Derivatives liability": "Credit"
         }
     },
@@ -183,7 +183,7 @@
             "Cash advances": "Liability",
             "Finance costs": "Expense",
             "Iredeemable convertible unsecured loan stock (ICULS)": "Liability",
-            "Land helf for property developement": "Asset",
+            "Land held for property developement": "Asset",
             "Derivatives liability": "Liability"
         }
     }
