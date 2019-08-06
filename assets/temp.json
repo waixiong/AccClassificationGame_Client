@@ -3,8 +3,8 @@
         "destription": "Given accounting documents,\nclassify their\nNORMAL BALANCE\ninto\n'Debit' OR 'Credit'",
         "type": ["Debit", "Credit"],
         "config": {
-            "start": 290,
-            "between": 220
+            "start": 307,
+            "between": 476
         },
         "accounts" : {
             "Cash equivalents" : "Debit",
@@ -48,7 +48,7 @@
             "Gains on sales of equipment": "Credit",
             "Dividend paid": "Debit",
             "Dividend payable": "Credit",
-            "Devidend declared": "Debit",
+            "Dividend declared": "Debit",
             "Retained earnings": "Credit",
             "Bonus payable": "Credit",
             "Drawings": "Debit",
@@ -142,7 +142,7 @@
             "Gains on sales of equipment": "Income",
             "Dividend paid": "Equity",
             "Dividend payable": "Liability",
-            "Devidend declared": "Equity",
+            "Dividend declared": "Equity",
             "Retained earnings": "Equity",
             "Bonus payable": "Liability",
             "Drawings": "Equity",

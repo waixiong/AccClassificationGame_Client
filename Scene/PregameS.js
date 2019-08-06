@@ -19,6 +19,15 @@ var Pregame = new Phaser.Class({
 
     create: function ()
     {
+        if(this.gameData.type == '1'){
+            var grass = this.add.graphics({
+                fillStyle: {
+                    color: 0x608038
+                }
+            })
+            grass.fillRect(0, 0, 600, 864);
+        }
+        
         _this = this;
         let bground = this.add.graphics({
             fillStyle: {
@@ -51,8 +60,13 @@ var Pregame = new Phaser.Class({
                 onComplete: function() {
                     _this.scene.stop();
                     //_this.scene.start('menu');
-                    _this.scene.add('game', Game);
-                    _this.scene.start('game', _this.gameData);
+                    if(_this.gameData.type == '1'){
+                        _this.scene.add('game', Game1);
+                        _this.scene.start('game', _this.gameData);
+                    }else{
+                        _this.scene.add('game', Game2);
+                        _this.scene.start('game', _this.gameData);
+                    }
                 }
             });
         });
